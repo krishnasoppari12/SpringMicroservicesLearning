@@ -1,0 +1,28 @@
+server:
+  port: 1818
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:2518/order
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  sql:
+    init:
+      platform: mysql
+
+  application:
+    name: ORDERSERVICE
+    
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka  # Fix: Change 'defaultzone' to 'defaultZone'
+#  instance:
+#    prefer-ip-address: true
